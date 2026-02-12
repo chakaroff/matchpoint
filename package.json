@@ -167,7 +167,7 @@
     }
   },
   "engines": {
-    "node": ">=18.0.0"
+    "node": "24.x"
   },
   "prisma": {
     "schema": "packages/prisma/schema.prisma",
