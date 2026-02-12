@@ -55,7 +55,7 @@
     "env-check:app-store": "dotenv-checker --schema .env.appStore.example --env .env.appStore",
     "env-check:common": "dotenv-checker --schema .env.example --env .env",
     "format": "biome format --write .",
-    "heroku-postbuild": "NODE_OPTIONS='--max_old_space_size=4096' turbo run @calcom/web#build",
+    "heroku-postbuild": "NODE_OPTIONS='--max_old_space_size=8192' turbo run @calcom/web#build",
     "lint:fix": "turbo lint:fix",
     "lint:report": "turbo lint:report",
     "lint": "turbo lint",
@@ -167,8 +167,7 @@
     }
   },
   "engines": {
-    "node": ">=18.0.0",
-    "yarn": "4.12.0"
+    "node": ">=18.0.0"
   },
   "prisma": {
     "schema": "packages/prisma/schema.prisma",
